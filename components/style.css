@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    /*Paleta*/
+    --CorPrincipal: #1F0000;
+    --CorDestaque: #D8B062;
+    /*Config da fonte*/
+    --Fonte: "Poppins", sans-serif;
+    --CorTexto: white;
+    --TamanhoTexto: 18px;
+}
+body
+{
+    font-family: var(--Fonte);
+    color: var(--CorTexto)
+}
+/*Inicio da estilização da navbar*/
+nav
+{
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    align-items: center;
+    background-color: var(--CorPrincipal);
+}
+nav ul
+{
+    display: flex;
+    gap: 70px;
+    list-style-type: none;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: var(--CorTexto);
+}
+nav ul li a:hover
+{
+    color: var(--CorDestaque);
+}
+nav img
+{
+    max-width: 180px;
+    height: auto;
+}
+/*Fim da estilização da navbar*/
