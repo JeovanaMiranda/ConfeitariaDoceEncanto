@@ -137,3 +137,64 @@ body {
     text-decoration: none;
 }
 
+/*estilização capa do cardápio*/
+
+body {
+    background-color:#1F0000;
+    margin: 0;
+}
+
+.toposite {
+    background-color: #1F0000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a,
+nav a:hover {
+    margin-left: 20px;
+    font-weight: 500;
+    
+    transition: 0.3s;
+}
+
+nav a:visited {
+    color: #FFFFFF;
+}
+
+nav a:active {
+    color: #d4b46a;
+}
+
+
+.titulo {
+    text-align: center;
+    color: #d4b46a;
+    font-size: 45px;
+    margin: 40px 0;
+}
+
+
+.imagens-doces {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.imagens-doces img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.bebidas img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagens-doces img:hover,
+.bebidas img:hover {
+    transform: scale(1.09);
+}
