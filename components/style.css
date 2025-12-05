@@ -151,6 +151,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+nav {
+    display: flex;
+    gap: 60px;
+}
 nav a,
 nav a:hover {
     margin-left: 20px;
@@ -171,8 +176,15 @@ nav a:active {
 .titulo {
     text-align: center;
     color: #d4b46a;
-    font-size: 45px;
+    font-size: 70px;
     margin: 40px 0;
+    transition: 2.5s ease; /* suavidade */
+}
+
+.titulo-cardapio:hover {
+    transform: translateY(-5px); /* sobe suavemente */
+    letter-spacing: 2px; /* expande um pouco */
+    color: #f5dca0; /* dourado mais claro */
 }
 
 
@@ -197,4 +209,168 @@ nav a:active {
 .imagens-doces img:hover,
 .bebidas img:hover {
     transform: scale(1.09);
+}
+
+
+.botao {
+    display: block;
+    margin: 20px auto;
+    background-color: #d4b46a;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2.5s ease;
+}
+.toposite {
+    background-color: #1F0000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a,
+nav a:hover {
+    margin-left: 20px;
+    font-weight: 500;
+    
+    transition: 0.3s;
+}
+
+nav a:visited {
+    color: #FFFFFF;
+}
+
+nav a:active {
+    color: #d4b46a;
+}
+
+
+.titulo {
+    text-align: center;
+    color: #d4b46a;
+    font-size: 70px;
+    margin: 40px 0;
+    transition: 2.5s ease; /* suavidade */
+}
+
+.titulo-cardapio:hover {
+    transform: translateY(-5px); /* sobe suavemente */
+    letter-spacing: 2px; /* expande um pouco */
+    color: #f5dca0; /* dourado mais claro */
+}
+
+
+.imagens-doces {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.imagens-doces img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.bebidas img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagens-doces img:hover,
+.bebidas img:hover {
+    transform: scale(1.09);
+}
+
+
+.botao {
+    display: block;
+    margin: 20px auto;
+    background-color: #d4b46a;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2.5s ease;
+}
+
+.botao:hover {
+    transform: translateY(-5px); /* sobe suavemente */
+    letter-spacing: 2px; /* expande um pouco */
+    color: #f5dca0; /* dourado mais claro */
+}
+
+.linha-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* espaço entre linhas e botão */
+    margin: 40px 0;
+}
+
+.linha {
+    flex: 1; /* ocupa o espaço restante, gambiarra */
+    height: 2px;
+    background-color: #d4b46a; 
+    max-width: 900px; /* aumenta a linha aaaa */
+}
+
+.botao-secao {
+    background-color: #d4b46a;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.botao-secao:hover {
+    background-color: #f0d398;
+}
+
+.botao:hover {
+    transform: translateY(-5px); /* sobe suavemente */
+    letter-spacing: 2px; /* expande um pouco */
+    color: #f5dca0; /* dourado mais claro */
+}
+
+.linha-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* espaço entre linhas e botão */
+    margin: 40px 0;
+}
+
+.linha {
+    flex: 1; /* ocupa o espaço restante, gambiarra */
+    height: 2px;
+    background-color: #d4b46a; 
+    max-width: 900px; /* aumenta a linha aaaa */
+}
+
+.botao-secao {
+    background-color: #d4b46a;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.botao-secao:hover {
+    background-color: #f0d398;
+}
+
+.logo-horizontal {
+    width: 180px;
+    height: auto;
 }
