@@ -639,23 +639,24 @@ body {
     margin-left: 10px;
 }
 /*GAMBIARRA COM IA*/ 
-.buy-button {
+.carrinho-finalizar {
     display: inline-block; 
-    color: #3b0b0b;               /* cor do texto */
+    background-color: #e6c472;
     padding: 10px 20px;        /* espaço interno */
     border-radius: 20px;
-    text-decoration: none;        /* remove link azul */
+    text-decoration: #FFFFFF;       /* remove link azul */
     font-weight: bold;
     float: right;
     margin-top: -60px; /*subindo o botão na mão oh pai*/
 }
 
 /* alinha o botão à direita */
-.buy-button { 
+.carrinho-finalizar { 
     display: flex;
     flex-direction: column;
-    align-items: flex-end;  /* empurra tudo pra direita */
+    align-items: flex-end;  /* empurra tudo pra direita *//
 }
+
 
 
 
