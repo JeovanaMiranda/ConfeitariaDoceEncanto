@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0; /* vertical */
+  padding: 10px 0; 
   background-color: var(--vermelhoEscuro);
   position: relative;
 }
@@ -26,9 +26,8 @@
   border-radius: 2px;
 }
 
-/* Menu padrão (mobile) */
 .nav-links {
-  display: none;         /* escondido inicialmente */
+  display: none;         
   flex-direction: column;
   position: absolute;
   top: 40px;
@@ -66,19 +65,17 @@
 
 /* Quando o menu estiver aberto */
 .nav-links.open {
-  display: flex !important;    /* garante que abra */
+  display: flex;   
 }
 
 /* ================= RESPONSIVO ================= */
 
-/* Tela média — nada muda aqui, mas mantive */
 @media (min-width: 768px) {
   .navbar {
     padding: 10px 0;
   }
 }
 
-/* Tela grande — menu sempre visível e sem o hambúrguer */
 @media (min-width: 1024px) {
   .hamburger {
     display: none;
@@ -103,7 +100,10 @@
 @media (min-width: 1330px) {
   .nav-links {
     gap: 70px;
+    font-size: 12pt;
+
   }
+  
 }
 
 @media (min-width: 1500px) {

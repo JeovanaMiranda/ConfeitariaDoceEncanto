@@ -13,11 +13,11 @@ body {
   background-color: var(--vermelhoEscuro);
   font-family: var(--fonte);
 }
-
-header,
-footer,
-main {
+header, footer{
   padding: 0 20px;
+}
+.padded {
+  padding: 50px 20px;
 }
 p {
   font-size: 12pt;
@@ -40,7 +40,6 @@ span {
   display: flex;
   flex-direction: column-reverse;
   align-items: end;
-  padding: 20px 0px;
   background-color: var(--vermelhoEscuro);
   color: white;
   gap: 1rem;
@@ -70,10 +69,11 @@ span {
 }
 
 @media (min-width: 768px) {
-  header,
-  footer,
-  main {
-    padding: 0 50px;
+  .padded {
+    padding: 50px 50px;
+  }
+  header, footer{
+    padding: 100px 50px;
   }
 
   p {
@@ -100,9 +100,10 @@ span {
   }
 }
 @media (min-width: 1024px) {
-  header,
-  footer,
-  main {
+  .padded {
+    padding: 50px 120px;
+  }
+  header, footer {
     padding: 0 120px;
   }
   p {
@@ -120,9 +121,10 @@ span {
 }
 
 @media (min-width: 1500px) {
-  header,
-  footer,
-  main {
+  .padded {
+    padding: 50px 200px;
+  }
+    header, footer{
     padding: 0 200px;
   }
   p {

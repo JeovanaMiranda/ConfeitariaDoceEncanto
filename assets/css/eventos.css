@@ -1,3 +1,5 @@
+
+
 .titulo {
   display: flex;
   align-items: center;
@@ -6,9 +8,9 @@
   text-align: center;
   gap: 1rem;
   margin-top: 20px;
-  padding: 20px 20px;
   background-color: #1f0000;
   color: white;
+  padding-top: 20px;
 }
 .titulo span {
   color: #d8b062;
@@ -243,6 +245,8 @@ button:active {
 
 
 @media (min-width: 768px) {
+
+  .titulo{  padding-top: 80px;}
   /*==========carrinho===================*/
   .carrinho {
     padding: 80px 5%;
