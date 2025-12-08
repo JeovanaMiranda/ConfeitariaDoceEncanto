@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nome": "Iced Coffee Gourmet",
+    "descricao": "Um copo alto de vidro transparente exibe um café gelado cremoso com efeito marmorizado",
+    "preco": "150,00",
+    "imagem": "../../assets/img/boloCarrossel.png"
+  },
+  {
+    "id": 2,
+    "nome": "Espresso Intenso",
+    "descricao": "Um copo alto de vidro transparente exibe um café gelado cremoso com efeito marmorizado",
+    "preco": "85,00",
+    "imagem": "../../assets/img/boloCarrossel.png"
+  },
+  {
+    "id": 3,
+    "nome": "Cappuccino Cremoso",
+    "descricao": "Um copo alto de vidro transparente exibe um café gelado cremoso com efeito marmorizado",
+    "preco": "120,00",
+    "imagem": "../../assets/img/boloCarrossel.png"
+  },
+  {
+    "id": 4,
+    "nome": "Latte Macchiato",
+    "descricao": "Um copo alto de vidro transparente exibe um café gelado cremoso com efeito marmorizado",
+    "preco": "135,00",
+    "imagem": "../../assets/img/boloCarrossel.png"
+  },
+  {
+    "id": 5,
+    "nome": "Cold Brew Premium",
+    "descricao": "Um copo alto de vidro transparente exibe um café gelado cremoso com efeito marmorizado",
+    "preco": "165,00",
+    "imagem": "../../assets/img/boloCarrossel.png"
+  },
+  {
+    "id": 6,
+    "nome": "Mocha Deluxe",
+    "descricao": "Um copo alto de vidro transparente exibe um café gelado cremoso com efeito marmorizado",
+    "preco": "145,00",
+    "imagem": "../../assets/img/boloCarrossel.png"
+  },
+  {
+    "id": 7,
+    "nome": "Americano Clássico",
+    "descricao": "Um copo alto de vidro transparente exibe um café gelado cremoso com efeito marmorizado",
+    "preco": "75,00",
+    "imagem": "../../assets/img/boloCarrossel.png"
+  },
+  {
+    "id": 8,
+    "nome": "Frappuccino Caramelo",
+    "descricao": "Um copo alto de vidro transparente exibe um café gelado cremoso com efeito marmorizado",
+    "preco": "155,00",
+    "imagem": "../../assets/img/boloCarrossel.png"
+  }
+]

@@ -1,0 +1,193 @@
+/* Reset e configurações base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color:#1f0000;
+}
+
+/* Container principal do carrossel */
+.carrossel-container {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.carrossel-wrapper {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.carrossel-relative {
+  position: relative;
+  padding: 0 3rem;
+}
+
+/* Grid de cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Card do produto */
+.card-produto {
+  background-color: var(--vermelhoClaro);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-produto:hover {
+  transform: translateY(-4px);
+}
+
+/* Imagem do produto */
+.card-produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.card-produto img:hover {
+  transform: scale(1.05);
+}
+
+.card-produto h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.card-produto p {
+  font-size: 0.8125rem;
+  color: #e5e5e5;
+  flex-grow: 1;
+}
+
+/* Área de compra */
+.card-comprar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 15px;
+}
+
+.card-preco {
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.btn-adicionar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #991b1b;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.btn-adicionar:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-adicionar span {
+  font-size: 0.7rem;
+}
+
+.icone-carrinho {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Botões de navegação */
+.btn-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: #7f1d1d;
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.btn-prev { left: 0; }
+.btn-next { right: 0; }
+
+.icone-seta {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+/* Indicadores */
+.indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.indicador {
+  height: 0.5rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #d1d5db;
+  padding: 0;
+}
+
+.indicador.ativo {
+  width: 2rem;
+  background-color: #7f1d1d;
+}
+
+.indicador:not(.ativo) {
+  width: 0.5rem;
+}
+
+/* Responsivo */
+@media (max-width: 1023px) {
+  .cards-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 767px) {
+  .cards-grid { grid-template-columns: 1fr; }
+}

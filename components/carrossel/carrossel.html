@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel</title>
+  <link rel="stylesheet" href="carrossel.css">
+</head>
+<body>
+
+<section class="carrossel-container">
+  <div class="carrossel-wrapper">
+    <div class="carrossel-relative">
+      <div id="cards-grid" class="cards-grid"></div>
+
+      <button id="btn-prev" class="btn-nav btn-prev" aria-label="Anterior">
+        <svg class="icone-seta" viewBox="0 0 24 24">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
+
+      <button id="btn-next" class="btn-nav btn-next" aria-label="Próximo">
+        <svg class="icone-seta" viewBox="0 0 24 24">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="indicadores" class="indicadores"></div>
+  </div>
+</section>
+
+<script src="carrossel.js"></script>
+
+</body>
+</html>
