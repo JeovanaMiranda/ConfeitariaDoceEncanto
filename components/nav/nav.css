@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0; /* só vertical */
-  background-color: #1F0000;
+  background-color: var(--vermelhoEscuro);
   position: relative;
 }
 
@@ -22,7 +22,7 @@
 .hamburger span {
   width: 25px;
   height: 3px;
-  background-color: #d8b062;
+  background-color: var(--dourado);
   border-radius: 2px;
 }
 
