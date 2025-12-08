@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --vermelhoEscuro: #1f0000;
+  --vermelhoClaro: #360909;
+  --dourado: #d8b062;
+  --fonte: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--vermelhoEscuro);
+  font-family: var(--fonte);
+}
+
+header,
+footer,
+main {
+  padding: 0 20px;
+}
+p {
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 18pt;
+  font-weight: bold;
+}
+span {
+  color: var(--dourado);
+}
+
+/*section com imgem e texto*/
+.informativa {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+  padding: 20px 0px;
+  background-color: var(--vermelhoEscuro);
+  color: white;
+  gap: 1rem;
+  font-size: 12pt;
+  margin: 5vh 0vh;
+}
+.informativa img {
+  width: 300px;
+}
+
+.left .texto {
+  text-align: right;
+}
+.rigth .texto /*div de informação com img e conteudo inverso, mas só quando tiver no modo row (tablet e além)*/ {
+  text-align: left;
+}
+
+.btn-principal {
+  width: 200px;
+  background-color: var(--dourado);
+  border: solid 1px var(--dourado);
+  padding: 12px 0;
+  border-radius: 8px;
+  color: #360909;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  header,
+  footer,
+  main {
+    padding: 0 50px;
+  }
+
+  p {
+    font-size: 13pt;
+  }
+  h2 {
+    font-size: 20pt;
+  }
+  .rigth {
+    flex-direction: row-reverse;
+  }
+  .rigth .imagem {
+    display: flex;
+    justify-content: end;
+  }
+  .left {
+    flex-direction: row;
+  }
+  .informativa .imagem {
+    width: 40%;
+  }
+  .informativa .texto {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  header,
+  footer,
+  main {
+    padding: 0 120px;
+  }
+  p {
+    font-size: 14pt;
+  }
+  h2 {
+    font-size: 24pt;
+  }
+  .informativa {
+    font-size: 14pt;
+  }
+  .imagem.aumentada img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1500px) {
+  header,
+  footer,
+  main {
+    padding: 0 200px;
+  }
+  p {
+    font-size: 16pt;
+  }
+  h2 {
+    font-size: 28pt;
+  }
+  .informativa {
+    font-size: 18pt;
+  }
+  .informativa img {
+    width: 400px;
+  }
+}
