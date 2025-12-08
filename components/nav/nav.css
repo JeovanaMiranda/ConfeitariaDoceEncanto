@@ -1,0 +1,107 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; /* só vertical */
+  background-color: #1F0000;
+  position: relative;
+}
+
+.logo {
+  width: 150px;
+}
+
+/* Botão hambúrguer */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #d8b062;
+  border-radius: 2px;
+}
+
+/* Menu escondido */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  background: #360909;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.nav-links li {
+  margin: 10px 0;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Quando o menu estiver aberto */
+.nav-links.open {
+  display: flex;
+}
+
+/* Responsivo — tela média */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 10px 0; /* só vertical */
+  }
+}
+
+/* Responsivo — tela grande */
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    padding: 10px 0; /* só vertical */
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 9pt;
+    position: static;
+    background: none;
+    box-shadow: none;
+  }
+
+  .nav-links li {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1330px) {
+  .navbar {
+    padding: 10px 0; /* só vertical */
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    position: static;
+    background: none;
+    box-shadow: none;
+  }
+  .nav-links li {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .navbar {
+    padding: 10px 0; /* só vertical */
+  }
+}

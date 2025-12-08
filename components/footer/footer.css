@@ -1,0 +1,199 @@
+footer {
+  margin-top: 20vh;
+  width: 100%;
+  background-color: #360909;
+  color: #d8b062;
+  padding: 40px 0; /* só vertical */
+}
+
+footer .logo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+footer .logo-div {
+  flex-grow: 1;
+}
+
+footer .logo {
+  width: 180px;
+  min-width: 0;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.informacoes h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.informacoes .item {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.icone-informacao {
+  width: 20px;
+  height: auto;
+}
+
+.links-uteis ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-uteis ul li {
+  line-height: 40px;
+}
+
+.links-uteis ul a,
+.links-uteis ul a:visited {
+  text-decoration: none;
+  color: #d8b062;
+}
+
+.copyright {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border-top: #d8b062 1px solid;
+}
+
+.botaoTopo {
+  display: flex;
+  gap: 10px;
+}
+
+.botaoTopo img {
+  width: 20px;
+  height: 20px;
+}
+
+.informacao-area {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.links-uteis h2 {
+  padding-bottom: 9px;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  footer {
+    padding: 50px 0; /* só vertical */
+  }
+
+  .informacoes {
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .informacoes h2 {
+    font-size: 20px;
+  }
+
+  .informacoes .item {
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .copyright {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    width: 200px;
+  }
+
+  .links-uteis ul li {
+    line-height: 55px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  footer {
+    padding: 50px 0; /* só vertical */
+  }
+
+  footer .logo-div img {
+    width: 15vw;
+  }
+
+  footer .logo-info {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .informacoes {
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 5rem;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+
+  .informacoes h2 {
+    font-size: 24px;
+  }
+
+  footer .logo {
+    min-width: 0px;
+    width: auto;
+  }
+}
+
+@media (min-width: 1330px) {
+  footer {
+    padding: 50px 0; /* só vertical */
+  }
+
+  .informacoes {
+    font-size: 10pt;
+    gap: 10rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  footer {
+    padding: 50px 0; /* só vertical */
+  }
+}
+
+@media (min-width: 1700px) {
+  .informacoes {
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 15rem;
+    margin-top: 0;
+    font-size: 12pt;
+    align-items: flex-start;
+  }
+
+  .informacoes h2 {
+    font-size: 32px;
+  }
+}
