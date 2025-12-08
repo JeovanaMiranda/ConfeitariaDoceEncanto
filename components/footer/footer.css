@@ -62,14 +62,14 @@ footer .logo {
 .links-uteis ul a,
 .links-uteis ul a:visited {
   text-decoration: none;
-  color: #d8b062;
+  color: var(--dourado);
 }
 
 .copyright {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
-  border-top: #d8b062 1px solid;
+  border-top: var(--dourado) 1px solid;
 }
 
 .botaoTopo {

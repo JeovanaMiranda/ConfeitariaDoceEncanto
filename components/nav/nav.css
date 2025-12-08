@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0; /* só vertical */
+  padding: 10px 0; /* vertical */
   background-color: var(--vermelhoEscuro);
   position: relative;
 }
@@ -26,9 +26,9 @@
   border-radius: 2px;
 }
 
-/* Menu escondido */
+/* Menu padrão (mobile) */
 .nav-links {
-  display: none;
+  display: none;         /* escondido inicialmente */
   flex-direction: column;
   position: absolute;
   top: 40px;
@@ -38,44 +38,61 @@
   border-radius: 10px;
 }
 
-.nav-links li {
-  margin: 10px 0;
-  list-style: none;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #ffffff;
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Distância da linha em relação ao texto */
+  width: 0;
+  height: 2px;
+  background-color: var(--dourado);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--dourado);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 /* Quando o menu estiver aberto */
 .nav-links.open {
-  display: flex;
+  display: flex !important;    /* garante que abra */
 }
 
-/* Responsivo — tela média */
+/* ================= RESPONSIVO ================= */
+
+/* Tela média — nada muda aqui, mas mantive */
 @media (min-width: 768px) {
   .navbar {
-    padding: 10px 0; /* só vertical */
+    padding: 10px 0;
   }
 }
 
-/* Responsivo — tela grande */
+/* Tela grande — menu sempre visível e sem o hambúrguer */
 @media (min-width: 1024px) {
   .hamburger {
     display: none;
   }
-  .navbar {
-    padding: 10px 0; /* só vertical */
-  }
+
   .nav-links {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     gap: 50px;
     font-size: 9pt;
     position: static;
     background: none;
-    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
   }
 
   .nav-links li {
@@ -84,24 +101,13 @@
 }
 
 @media (min-width: 1330px) {
-  .navbar {
-    padding: 10px 0; /* só vertical */
-  }
   .nav-links {
-    display: flex;
-    flex-direction: row;
     gap: 70px;
-    position: static;
-    background: none;
-    box-shadow: none;
-  }
-  .nav-links li {
-    margin: 0 10px;
   }
 }
 
 @media (min-width: 1500px) {
   .navbar {
-    padding: 10px 0; /* só vertical */
+    padding: 10px 0;
   }
 }
