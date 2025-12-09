@@ -30,7 +30,7 @@ function initCarrossel(containerId, jsonPath) {
           <p>${produto.descricao}</p>
           <div class="card-comprar">
             <p class="card-preco">R$ ${produto.preco}</p>
-            <button class="btn-adicionar">Adicionar</button>
+            <button class="btn-adicionar"><a href="/pages/bolo.html"class="link-dourado">Veja Mais</a></button>
           </div>
         </div>
       `;

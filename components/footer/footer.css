@@ -38,7 +38,7 @@ footer .logo {
   font-weight: 400;
 }
 
-.informacoes .item {
+.informacoes .itemArea {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -59,11 +59,7 @@ footer .logo {
   line-height: 40px;
 }
 
-.links-uteis ul a,
-.links-uteis ul a:visited {
-  text-decoration: none;
-  color: var(--dourado);
-}
+
 
 .copyright {
   padding-top: 50px;
@@ -113,7 +109,7 @@ footer .logo {
     font-size: 20px;
   }
 
-  .informacoes .item {
+  .informacoes .itemArea {
     gap: 1.5rem;
     justify-content: flex-start;
     align-items: flex-start;

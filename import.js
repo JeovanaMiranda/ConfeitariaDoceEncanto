@@ -1,8 +1,13 @@
 
 fetch('/components/nav/nav.html')
   .then(res => res.text())
-  .then(data => document.getElementById('nav').innerHTML = data);
+  .then(data => {
+    document.getElementById('nav').innerHTML = data;
 
+    const script = document.createElement('script');
+    script.src = '../../assets/js/script.js';
+    document.body.appendChild(script);
+  });
 fetch('/components/footer/footer.html')
   .then(res => res.text())
   .then(data => document.getElementById('footer').innerHTML = data);

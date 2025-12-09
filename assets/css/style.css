@@ -9,6 +9,9 @@
   --dourado: #e0c388;
   --fonte: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--vermelhoEscuro);
   font-family: var(--fonte);
@@ -66,6 +69,33 @@ span {
   color: #360909;
   font-size: 12pt;
   font-weight: bold;
+}
+.btn-principal:hover {
+  background-color: var(--vermelhoClaro);
+  border: solid 1px var(--vermelhoClaro);
+  color: var(--dourado);
+}
+.btn-vazado {
+  width: 200px;
+  background-color: transparent;
+  border: solid 1px var(--dourado);
+  padding: 12px 0;
+  border-radius: 8px;
+  color: var(--dourado);
+  font-size: 12pt;
+  font-weight: bold;
+}
+.link-dourado{
+  color: #e0c388;
+  text-decoration: none;
+}
+.link-dourado:visited{
+  color: #e0c388;
+  text-decoration: none;
+}
+.link-dourado:hover{
+  color: #ffe884;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {

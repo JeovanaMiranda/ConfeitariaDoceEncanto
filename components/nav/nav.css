@@ -34,6 +34,7 @@
   right: 0px;
   background: #360909;
   padding: 15px;
+  gap: 2rem;
   border-radius: 10px;
 }
 
@@ -100,7 +101,7 @@
 @media (min-width: 1330px) {
   .nav-links {
     gap: 70px;
-    font-size: 12pt;
+    font-size: 9pt;
 
   }
   
