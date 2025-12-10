@@ -97,6 +97,18 @@ span {
   color: #ffe884;
   text-decoration: none;
 }
+.link-branco{
+  color: #ffffff;
+  text-decoration: none;
+}
+.link-branco:visited{
+  color: #ffffff;
+  text-decoration: none;
+}
+.link-branco:hover{
+  color: #ffe884;
+  text-decoration: none;
+}
 
 @media (min-width: 768px) {
   .padded {
