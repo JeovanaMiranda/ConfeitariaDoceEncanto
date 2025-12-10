@@ -291,7 +291,11 @@ ul, a {
     align-items: flex-end;
 }
 
-
+.limite {
+  max-width: 1400px; 
+  margin: 0 auto;   
+  width: 100%;
+}
 
 @media (max-width: 768px) {
 
@@ -358,4 +362,14 @@ ul, a {
     .item-img-cardapio {
         width: 450px;
     }
+}
+
+@media (min-width: 2000px) {
+
+
+body {
+  max-width: 1800px;
+  width: 100%;
+  margin: auto;
+}
 }
